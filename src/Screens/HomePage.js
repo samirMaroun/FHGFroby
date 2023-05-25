@@ -9,8 +9,6 @@ import service3 from "../assets/Images/service3.jpg";
 import service4 from "../assets/Images/service4.jpg";
 import service5 from "../assets/Images/service5.jpg";
 import service6 from "../assets/Images/service6.jpg";
-import bgCf from "../assets/Images/bgCf.jpg";
-import quotesIcon from "../assets/Images/quotesIcon.png";
 import Hand from "../assets/Images/handGar.png";
 
 import classes from "../assets/Styles/Navbar.module.css";
@@ -19,9 +17,13 @@ import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import { CSSTransition } from "react-transition-group";
 import "../assets/Styles/FadeFromTop.css";
 import "../assets/Styles/FadingBackground.css";
-import ServiceCard from "../Components/ServiceCard";
-import CustomerFeedback from "../Components/CustomerFeedback";
+import ServiceCard from "../Components/Home/ServiceCard";
+import CustomerFeedback from "../Components/Home/CustomerFeedback";
+import useWindowDimensions from "../Components/WindowDimensions";
+import RadioButtonUncheckedOutlinedIcon from "@mui/icons-material/RadioButtonUncheckedOutlined";
+import RadioButtonCheckedOutlinedIcon from "@mui/icons-material/RadioButtonCheckedOutlined";
 const HomePage = () => {
+  const { width } = useWindowDimensions();
   const [arrColor, setArrColor] = useState("white");
   const [arr2Color, setArr2Color] = useState("white");
 
@@ -32,16 +34,11 @@ const HomePage = () => {
   useEffect(() => {
     setTimeout(() => {
       setVisible(true);
-    }, 500); 
+    }, 500);
   }, [visible]);
 
   return (
-    <Grid
-      container
-      paddingTop={12}
-      paddingBottom={50}
-      justifyContent={"center"}
-    >
+    <Grid container paddingTop={12} paddingBottom={5} justifyContent={"center"}>
       <Grid
         // className={`fading-background ${visible ? "visible" : ""}`}
         item
@@ -54,8 +51,8 @@ const HomePage = () => {
           backgroundSize: "cover",
           backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
-        height={"100vh"}
-        width={"100%"}
+        height={{ sm: "100vh", xs: "70vh" }}
+        width={window.innerWidth}
       >
         <Grid
           item
@@ -71,38 +68,43 @@ const HomePage = () => {
           <Grid
             container
             xs={12}
-            justifyContent={"space-between"}
+            justifyContent={{ md: "space-between", xs: "center" }}
             alignItems={"center"}
             direction={"row"}
           >
-            <Grid
-              item
-              border={"0.1px dashed #fff"}
-              width={60}
-              height={60}
-              container
-              className={classes["arrCont"]}
-              onMouseOver={(e) => {
-                setArrColor("#73b21a");
-              }}
-              onMouseLeave={(e) => {
-                setArrColor("white");
-              }}
-              onClick={() => {
-                setVisible(!visible);
-                setTimeout(() => {
-                  if (index === 1) {
-                    setIndex(3);
-                  } else {
-                    setIndex(index - 1);
-                  }
-                }, 500);
-              }}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <ArrowLeftOutlinedIcon fontSize="large" htmlColor={arrColor} />
-            </Grid>
+            {width > 1100 ? (
+              <Grid
+                item
+                border={"0.1px dashed #fff"}
+                width={60}
+                height={60}
+                container
+                className={classes["arrCont"]}
+                onMouseOver={(e) => {
+                  setArrColor("#73b21a");
+                }}
+                onMouseLeave={(e) => {
+                  setArrColor("white");
+                }}
+                onClick={() => {
+                  setVisible(!visible);
+                  setTimeout(() => {
+                    if (index === 1) {
+                      setIndex(3);
+                    } else {
+                      setIndex(index - 1);
+                    }
+                  }, 500);
+                }}
+                justifyContent={"center"}
+                alignItems={"center"}
+              >
+                <ArrowLeftOutlinedIcon fontSize="large" htmlColor={arrColor} />
+              </Grid>
+            ) : (
+              <></>
+            )}
+
             <Grid item>
               <CSSTransition
                 in={visible}
@@ -161,36 +163,126 @@ const HomePage = () => {
                 </Grid>
               </CSSTransition>
             </Grid>
-
+            {width > 1100 ? (
+              <Grid
+                item
+                border={"0.1px dashed #fff"}
+                width={60}
+                height={60}
+                container
+                className={classes["arrCont"]}
+                onMouseOver={(e) => {
+                  setArr2Color("#73b21a");
+                }}
+                onMouseLeave={(e) => {
+                  setArr2Color("white");
+                }}
+                justifyContent={"center"}
+                alignItems={"center"}
+                onClick={() => {
+                  setVisible(!visible);
+                  setTimeout(() => {
+                    if (index === 3) {
+                      setIndex(1);
+                    } else {
+                      setIndex(index + 1);
+                    }
+                  }, 500);
+                }}
+              >
+                <ArrowRightOutlinedIcon
+                  fontSize="large"
+                  htmlColor={arr2Color}
+                />
+              </Grid>
+            ) : (
+              <></>
+            )}
+          </Grid>
+          {width < 1100 ? (
             <Grid
               item
-              border={"0.1px dashed #fff"}
-              width={60}
-              height={60}
               container
-              className={classes["arrCont"]}
-              onMouseOver={(e) => {
-                setArr2Color("#73b21a");
-              }}
-              onMouseLeave={(e) => {
-                setArr2Color("white");
-              }}
+              direction={"row"}
+              gap={2}
               justifyContent={"center"}
-              alignItems={"center"}
-              onClick={() => {
-                setVisible(!visible);
-                setTimeout(() => {
-                  if (index === 3) {
-                    setIndex(1);
-                  } else {
-                    setIndex(index + 1);
-                  }
-                }, 500);
-              }}
             >
-              <ArrowRightOutlinedIcon fontSize="large" htmlColor={arr2Color} />
+              <Grid
+                item
+                onMouseOver={(e) => {
+                  e.target.style.cursor = "pointer";
+                }}
+                onClick={() => {
+                  setVisible(!visible);
+                  setTimeout(() => {
+                    setIndex(1);
+                  }, 500);
+                }}
+              >
+                {index === 1 ? (
+                  <RadioButtonCheckedOutlinedIcon
+                    fontSize="medium"
+                    htmlColor="#ffffff"
+                  />
+                ) : (
+                  <RadioButtonUncheckedOutlinedIcon
+                    fontSize="medium"
+                    htmlColor="#ffffff"
+                  />
+                )}
+              </Grid>
+              <Grid
+                item
+                onMouseOver={(e) => {
+                  e.target.style.cursor = "pointer";
+                }}
+                onClick={() => {
+                  setVisible(!visible);
+                  setTimeout(() => {
+                    setIndex(2);
+                  }, 500);
+                }}
+              >
+                {index === 2 ? (
+                  <RadioButtonCheckedOutlinedIcon
+                    fontSize="medium"
+                    htmlColor="#ffffff"
+                  />
+                ) : (
+                  <RadioButtonUncheckedOutlinedIcon
+                    fontSize="medium"
+                    htmlColor="#ffffff"
+                  />
+                )}
+              </Grid>
+              <Grid
+                item
+                onMouseOver={(e) => {
+                  e.target.style.cursor = "pointer";
+                }}
+                onClick={() => {
+                  setVisible(!visible);
+                  setTimeout(() => {
+                    setIndex(3);
+                  }, 500);
+                }}
+              >
+                {index === 3 ? (
+                  <RadioButtonCheckedOutlinedIcon
+                    fontSize="medium"
+                    htmlColor="#ffffff"
+                  />
+                ) : (
+                  <RadioButtonUncheckedOutlinedIcon
+                    fontSize="medium"
+                    htmlColor="#ffffff"
+                  />
+                )}
+              </Grid>
             </Grid>
-          </Grid>
+          ) : (
+            <></>
+          )}
         </Grid>
       </Grid>
       <Grid
@@ -213,8 +305,14 @@ const HomePage = () => {
 
       <Grid item width={200} border={"1px dashed #73b21a"} height={0}></Grid>
       <Grid item xs={12}></Grid>
-      <Grid item xs={8} className={classes["gardenText"]} paddingTop={3}>
-        We provide ongoing property maintenance which includes lawn mowing,
+      <Grid
+        item
+        sm={8}
+        xs={11}
+        className={classes["gardenText"]}
+        paddingTop={3}
+      >
+        We provide on going property maintenance which includes lawn mowing,
         fertilizing, spring and fall cleanups, de-thatching, aerating, seeding,
         mulching, edging, herbicide application, plant health care, snow
         plowing, pruning, and tree care and removal.

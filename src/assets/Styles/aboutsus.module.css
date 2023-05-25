@@ -1,0 +1,51 @@
+.Title {
+  font-size: 44px;
+  font-family: "Poppins";
+  color: #ffffff;
+  font-weight: bold;
+}
+.welcomet {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: "Poppins";
+  color: #000;
+  text-align: center;
+}
+.garden {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: "Poppins";
+  color: #73b21a;
+  text-align: center;
+}
+
+.info1 {
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Poppins";
+}
+.aboutus {
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #848484;
+  line-height: 1.5;
+}
+.author {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #73b21a;
+  font-weight: 500;
+}
+.number {
+    font-size: 44px;
+    font-family: "Poppins";
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+  }
+  .numberText{
+    font-size: 20px;
+    font-family: "Poppins";
+    color: #ffffff;
+    font-weight: 400;
+  }

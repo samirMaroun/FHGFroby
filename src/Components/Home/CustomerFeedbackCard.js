@@ -1,11 +1,11 @@
 import React from "react";
 import { Grid, IconButton } from "@mui/material";
-import classes from "../assets/Styles/Navbar.module.css";
+import classes from "../../assets/Styles/Navbar.module.css";
 import StarRateIcon from "@mui/icons-material/StarRate";
 const CustomerFeedbackCard = (props) => {
   return (
-    <Grid item container justifyContent={"center"} alignItems={"center"}>
-      <Grid item className={classes["carouselText"]} xs={9}>
+    <Grid item container justifyContent={"center"} alignItems={"center"} xs={7} sm={12}>
+      <Grid item className={classes["carouselText"]} sm={9} xs={12}>
         {props.description}
       </Grid>
       <Grid item paddingTop={3} xs={12} className={classes["feedbacker"]}>
@@ -14,7 +14,7 @@ const CustomerFeedbackCard = (props) => {
       <Grid
         item
         container
-        xs={12}
+        sm={12}
         justifyContent={"center"}
         alignItems={"center"}
         direction={"row"}

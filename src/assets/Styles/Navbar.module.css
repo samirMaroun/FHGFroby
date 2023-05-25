@@ -159,3 +159,38 @@
   font-size: 18px;
   color: #ffffff;
 }
+.phoenNavButt {
+  font-size: 20px;
+  font-family: "Poppins";
+  color: #222222;
+}
+.phoenNavButt:hover {
+  cursor: pointer;
+  color: #73b21a;
+}
+
+@media only screen and (max-width: 800px) {
+  .silderText {
+    font-size: 15px;
+  }
+  .silderText2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .silderText {
+    font-size: 15px;
+  }
+  .silderText2 {
+    font-size: 35px;
+  }
+  .garden{
+    font-size:25px ;
+  }
+  .welcomet{
+    font-size: 25px;
+  }
+  .carouselText{
+    font-size: 14px;
+  }
+}

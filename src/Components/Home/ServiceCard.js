@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import classes from "../assets/Styles/ServiceCard.module.css";
+import classes from "../../assets/Styles/ServiceCard.module.css";
 const ServiceCard = (props) => {
   const [color, setColor] = useState("#000000");
   const [fullBg, setFullBg] = useState(false);

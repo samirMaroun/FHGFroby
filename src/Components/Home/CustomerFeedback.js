@@ -3,15 +3,17 @@ import React from "react";
 import { useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import bgCf from "../assets/Images/bgCf.jpg";
-import quotesIcon from "../assets/Images/quotesIcon.png";
-import classes from "../assets/Styles/Navbar.module.css";
+import bgCf from "../../assets/Images/bgCf.jpg";
+import quotesIcon from "../../assets/Images/quotesIcon.png";
+import classes from "../../assets/Styles/Navbar.module.css";
 import CustomerFeedbackCard from "./CustomerFeedbackCard";
+import useWindowDimensions from "../../Components/WindowDimensions";
+
 const CustomerFeedback = (props) => {
+  const { width } = useWindowDimensions();
   useEffect(() => {}, [props.indexCF]);
   return (
     <Grid
-   
       item
       container
       style={{
@@ -29,11 +31,12 @@ const CustomerFeedback = (props) => {
         item
         paddingBottom={10}
         container
-        width={"100%"}
+        width={window.innerWidth}
+        overflow={"hidden"}
         height={"100%"}
         bgcolor={"rgba(0,0,0,0.5)"}
         justifyContent={"center"}
-        paddingTop={9}
+        paddingTop={{ sm: 9, xs: 1 }}
       >
         <img src={quotesIcon} width={50} alt={"quote"} />
         <Grid
@@ -59,13 +62,21 @@ const CustomerFeedback = (props) => {
           ></Grid>
         </Grid>
 
-        <Grid item container direction={"row"} marginTop={5} xs={10}>
+        <Grid
+          item
+          container
+          direction={"row"}
+          marginTop={5}
+          sm={10}
+          xs={width > 488 ? 8 : 10}
+        >
           <Carousel
             infiniteLoop={true}
             showIndicators={false}
             autoPlay={true}
             showStatus={false}
             swipeable={true}
+            showArrows={width > 700 ? true : false}
             className={classes["slider"]}
           >
             <CustomerFeedbackCard

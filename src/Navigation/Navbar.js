@@ -2,16 +2,21 @@ import React, { useRef, useState, useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import classes from "../assets/Styles/Navbar.module.css";
 import Logo from "../assets/Images/FHGLOGo.png";
-import ClockIcon from "../assets/Images/CLockIcon.png";
-import LocationIcon from "../assets/Images/locationIcon.png";
 import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
+import useWindowDimensions from "../Components/WindowDimensions";
+import PhoneNav from "./PhoneNav";
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState("");
   const targetRef = useRef(null);
+  const { width } = useWindowDimensions();
   const [isScrolledPast, setIsScrolledPast] = useState(false);
   const handleScroll = () => {
     const targetElement = targetRef.current;
@@ -20,6 +25,21 @@ const Navbar = () => {
       setIsScrolledPast(top + 100 < 0);
     }
   };
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      setActiveTab("Home");
+    } else if (window.location.pathname === "/aboutus") {
+      setActiveTab("AboutUs");
+    } else if (window.location.pathname === "/services") {
+      setActiveTab("Services");
+    } else if (window.location.pathname === "/projects") {
+      setActiveTab("Projects");
+    } else if (window.location.pathname === "/testimonials") {
+      setActiveTab("Testimonials");
+    } else if (window.location.pathname === "/contactus") {
+      setActiveTab("ContactUs");
+    }
+  }, [window.location.pathname]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -27,7 +47,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  return (
+  return width > 1100 ? (
     <Grid
       container
       ref={targetRef}
@@ -37,14 +57,23 @@ const Navbar = () => {
       paddingTop={1}
       direction={"row"}
       height={isScrolledPast ? 0 : 55}
-
+      width={window.innerWidth}
       // position={"fixed"}
     >
       {isScrolledPast ? (
         <></>
       ) : (
         <>
-          <Grid item lg={2}>
+          <Grid
+            item
+            lg={2}
+            onMouseOver={(e) => {
+              e.target.style.cursor = "pointer";
+            }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <img src={Logo} alt={"logo"} width={180} />
           </Grid>
           <Grid item container lg={6.5} md={7.5} direction="row-reverse">
@@ -116,7 +145,6 @@ const Navbar = () => {
         container
         direction={"row"}
         justifyContent={"center"}
-      
         marginTop={isScrolledPast ? 6 : 4}
         position={isScrolledPast ? "fixed" : "relative"}
         gap={2}
@@ -125,7 +153,8 @@ const Navbar = () => {
         <Grid
           item
           container
-          md={6.5}
+          lg={6.5}
+          md={7}
           height={70}
           bgcolor={"#1d1d1d"}
           padding={1}
@@ -137,6 +166,10 @@ const Navbar = () => {
             border={"0.1px dashed rgb(68, 68, 68)"}
             xs={2}
             className={classes["navButtons"]}
+            color={activeTab === "Home" ? "#73b21a" : "#ffff"}
+            onClick={() => {
+              navigate("/");
+            }}
           >
             HOME
           </Grid>
@@ -146,6 +179,10 @@ const Navbar = () => {
             border={"0.1px dashed rgb(68, 68, 68)"}
             xs={2}
             className={classes["navButtons"]}
+            color={activeTab === "AboutUs" ? "#73b21a" : "#ffff"}
+            onClick={() => {
+              navigate("/aboutus");
+            }}
           >
             ABOUT US
           </Grid>
@@ -155,6 +192,10 @@ const Navbar = () => {
             border={"0.1px dashed rgb(68, 68, 68)"}
             xs={2}
             className={classes["navButtons"]}
+            color={activeTab === "Services" ? "#73b21a" : "#ffff"}
+            onClick={() => {
+              navigate("/services");
+            }}
           >
             SERVICES
           </Grid>
@@ -164,6 +205,10 @@ const Navbar = () => {
             border={"0.1px dashed rgb(68, 68, 68)"}
             xs={2}
             className={classes["navButtons"]}
+            color={activeTab === "Projects" ? "#73b21a" : "#ffff"}
+            onClick={() => {
+              navigate("/projects");
+            }}
           >
             PROJECTS
           </Grid>
@@ -173,6 +218,10 @@ const Navbar = () => {
             border={"0.1px dashed rgb(68, 68, 68)"}
             xs={2}
             className={classes["navButtons"]}
+            color={activeTab === "Testimonials" ? "#73b21a" : "#ffff"}
+            onClick={() => {
+              navigate("/testimonials");
+            }}
           >
             TESTIMONIALS
           </Grid>
@@ -182,6 +231,10 @@ const Navbar = () => {
             border={"0.1px dashed rgb(68, 68, 68)"}
             xs={2}
             className={classes["navButtons"]}
+            color={activeTab === "ContactUs" ? "#73b21a" : "#ffff"}
+            onClick={() => {
+              navigate("/contactus");
+            }}
           >
             CONTACT US
           </Grid>
@@ -189,7 +242,8 @@ const Navbar = () => {
         <Grid
           item
           container
-          xs={2.5}
+          lg={2.5}
+          md={3}
           height={70}
           bgcolor={"#73b21a"}
           direction={"row"}
@@ -199,48 +253,13 @@ const Navbar = () => {
         >
           <PhoneInTalkOutlinedIcon htmlColor="#fff" fontSize="large" />
           <Grid item className={classes["PhoneNumber"]}>
-            {" "}
             +61 4 5263 7128
           </Grid>
         </Grid>
       </Grid>
     </Grid>
-    // <Grid
-    //   container
-    //   className={classes["navbar"]}
-    //   direction={"row-reverse"}
-    //   alignItems={"center"}
-    //   position={"fixed"}
-    // >
-    //   <Grid
-    //     item
-    //     xs={8}
-    //     container
-    //     alignItems={"center"}
-    //     justifyContent={"center"}
-    //     className={classes["inclined"]}
-    //     gap={15}
-    //   >
-    //     <Grid item className={classes["navButtons"]}>
-    //       Home
-    //     </Grid>
-    //     <Grid item className={classes["navButtons"]}>
-    //       Services
-    //     </Grid>
-    //     <Grid item className={classes["navButtons"]}>
-    //       Projects
-    //     </Grid>
-    //     <Grid item className={classes["navButtons"]}>
-    //       Abouts us
-    //     </Grid>
-    //     <Grid item className={classes["navButtons"]}>
-    //       Contact us
-    //     </Grid>
-    //   </Grid>
-    //   <Grid item lg={4} paddingLeft={8}>
-    //     <img src={Logo} alt={"logo"} width={180} />
-    //   </Grid>
-    // </Grid>
+  ) : (
+    <PhoneNav activeTab={activeTab} />
   );
 };
 
