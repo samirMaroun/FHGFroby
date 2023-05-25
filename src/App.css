@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+.image-slider {
+  position: relative;
+}
+
+.image-slider img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-slider .slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform-origin: top;
+}
+
+.image-slider .slide-content.fade-in {
+  opacity: 1;
+  transform: translate(-50%, 0%);
+}
