@@ -32,7 +32,7 @@ const HomePage = () => {
   useEffect(() => {
     setTimeout(() => {
       setVisible(true);
-    }, 500);
+    }, 500); 
   }, [visible]);
 
   return (
