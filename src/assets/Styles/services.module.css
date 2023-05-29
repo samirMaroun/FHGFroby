@@ -1,0 +1,41 @@
+.Title {
+  font-size: 44px;
+  font-family: "Poppins";
+  color: #ffffff;
+  font-weight: bold;
+}
+.box {
+  width: 300px;
+  height: 70px;
+  border: 1px dashed #ececec;
+  background-color: #fafafa;
+  transition: 0.5s;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #848484;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.box:hover {
+  background-color: #73b21a;
+  cursor: pointer;
+  border: 1px dashed #73b21a;
+}
+.box2 {
+  width: 98%;
+  height: 93%;
+  border: 1px dashed #fafafa;
+  background-color: #fafafa;
+  transition: 0.5s;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #848484;
+  padding: 15px 20px;
+}
+.box2:hover {
+  border: 1px dashed #ffffff;
+  background-color: #73b21a;
+  cursor: pointer;
+  color: #ffffff;
+}

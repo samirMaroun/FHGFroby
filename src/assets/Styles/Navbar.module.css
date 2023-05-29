@@ -184,13 +184,23 @@
   .silderText2 {
     font-size: 35px;
   }
-  .garden{
-    font-size:25px ;
-  }
-  .welcomet{
+  .garden {
     font-size: 25px;
   }
-  .carouselText{
+  .welcomet {
+    font-size: 25px;
+  }
+  .carouselText {
     font-size: 14px;
   }
+}
+.services {
+  font-family: "Poppins";
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+}
+.services:hover {
+  cursor: pointer !important;
+  background-color: #73b21a;
+  transition: background-color 1s ease;
 }

@@ -3,14 +3,8 @@ import React, { useEffect, useState } from "react";
 import bgImage from "../assets/Images/20220114_101420.jpg";
 import bgImage2 from "../assets/Images/20210820_075836.jpg";
 import bgImage3 from "../assets/Images/20220219_095121.jpg";
-import service1 from "../assets/Images/service1.jpg";
-import service2 from "../assets/Images/service2.jpg";
-import service3 from "../assets/Images/service3.jpg";
-import service4 from "../assets/Images/service4.jpg";
-import service5 from "../assets/Images/service5.jpg";
-import service6 from "../assets/Images/service6.jpg";
 import Hand from "../assets/Images/handGar.png";
-
+import { ServicesOfFHG } from "../Data/Data";
 import classes from "../assets/Styles/Navbar.module.css";
 import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
@@ -340,48 +334,14 @@ const HomePage = () => {
         columnGap={3}
         paddingTop={3}
       >
-        <ServiceCard
-          imgUrl={service1}
-          title={"Spring & Fall Cleanup"}
-          description={
-            "Our fall clean-up service is the process of removing all leaves, branches of the summer season"
-          }
-        />
-        <ServiceCard
-          imgUrl={service2}
-          title={"Snow & Ice Removal"}
-          description={
-            "Snow and Ice removal services can be customized to the best possible solution in the huge area"
-          }
-        />
-        <ServiceCard
-          imgUrl={service3}
-          title={"Lawn & Garden Care"}
-          description={
-            "Complete range of landscaping services all designed to enhance the beauty of your home and property"
-          }
-        />
-        <ServiceCard
-          imgUrl={service4}
-          title={"Irrigation & Drainage"}
-          description={
-            "Watering your lawn and is the key to preserving its lushness and beauty the experts carefully design"
-          }
-        />
-        <ServiceCard
-          imgUrl={service5}
-          title={"Stone and Hardscaping"}
-          description={
-            "Steady rains the leaves are dropping and each week our and hauling them off the properties"
-          }
-        />
-        <ServiceCard
-          imgUrl={service6}
-          title={"Planting and Removal"}
-          description={
-            "Environmental problems result when exotic plants are placed in the landscape"
-          }
-        />
+        {ServicesOfFHG?.map((service) => (
+          <ServiceCard
+            key={service.Id}
+            imgUrl={service.Image}
+            title={service.Title}
+            description={service.Desciption}
+          />
+        ))}
       </Grid>
 
       <CustomerFeedback indexCF={indexCF}></CustomerFeedback>

@@ -31,7 +31,7 @@ const Card = (props) => {
       <Grid item className={classes["number"]} xs={12}>
         {counter}
       </Grid>
-      <Grid item className={classes["numberText"]}>
+      <Grid item className={classes["numberText"]} >
         {props.text}
       </Grid>
     </Grid>

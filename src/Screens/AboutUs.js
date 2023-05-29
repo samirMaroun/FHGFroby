@@ -25,8 +25,8 @@ const AboutUs = () => {
           About Us
         </Grid>
       </Grid>
-      <Grid item container padding={10} direction={"row"}>
-        <Grid item xs={7}>
+      <Grid item container padding={{ sm: 10, xs: 2 }} direction={"row"}>
+        <Grid item md={7} xs={12}>
           <Grid
             item
             container
@@ -48,24 +48,65 @@ const AboutUs = () => {
           ></Grid>
           <Grid item container direction={"row"} marginTop={5}>
             <Grid item className={classes["info1"]} color={"#292929"}>
-              We are providing best Landscaping services to our valuable
-              customers&nbsp;
+              Welcome to&nbsp;
             </Grid>
-            <Grid item className={classes["info1"]} color={"#292929"}>
-              who hires&nbsp;
-            </Grid>
+
             <Grid item className={classes["info1"]} color={"#73b21a"}>
-              Forever Home Gardens.
+              Forever Home Gardens,
             </Grid>
           </Grid>
           <Grid item className={classes["aboutus"]} marginTop={3}>
-            Forever Home Gardens is a full-service landscaping company with a
-            straightforward and unique design/build philosophy. We believe in
-            having one landscape designer handle the job from its conception on
-            paper, to the realization on your property. The Landscaper is made
-            up of a group of highly skilled landscaping professionals who pays a
-            lot of attention to small details. In the 30+ years of experience
-            our staff keep your property looking and functioning beautifully.
+            your ultimate resource for all things gardening and landscaping! We
+            are passionate about transforming outdoor spaces into breathtaking
+            havens of natural beauty. With our extensive knowledge and
+            expertise, we strive to provide you with the inspiration, guidance,
+            and tools you need to create and maintain your dream garden.
+          </Grid>
+          <Grid item className={classes["aboutus"]} marginTop={1.5}>
+            At Forever Home Gardens , we understand that every garden is unique,
+            and we believe in tailoring our services to meet your specific needs
+            and preferences. Whether you are a gardening enthusiast, a homeowner
+            looking to enhance your property's curb appeal, or a business owner
+            seeking to create a welcoming outdoor environment, we've got you
+            covered.
+          </Grid>
+          <Grid item className={classes["aboutus"]} marginTop={1.5}>
+            Our team of dedicated and experienced professionals is committed to
+            delivering exceptional results. We take pride in our attention to
+            detail, creativity, and commitment to customer satisfaction. From
+            conceptualizing and designing stunning landscapes to providing
+            ongoing maintenance and care, we offer a comprehensive range of
+            services to cater to all aspects of your gardening and landscaping
+            requirements.
+          </Grid>
+          <Grid item className={classes["aboutus"]} marginTop={1.5}>
+            What sets us apart is our unwavering dedication to sustainable and
+            environmentally-friendly practices. We believe in preserving and
+            nurturing the natural ecosystem while creating stunning outdoor
+            spaces. Our team incorporates eco-friendly techniques, utilizes
+            organic fertilizers, and promotes water conservation to ensure that
+            your garden thrives in harmony with nature.
+          </Grid>
+          <Grid item className={classes["aboutus"]} marginTop={1.5}>
+            In addition to our services, we are committed to sharing valuable
+            knowledge and insights with our audience. Through our website, we
+            aim to be a reliable source of information, offering tips, guides,
+            and articles on various gardening and landscaping topics. Whether
+            you're a beginner looking to start your first garden or a seasoned
+            gardener seeking new ideas, our content will inspire and empower you
+            on your journey.
+          </Grid>
+          <Grid item className={classes["aboutus"]} marginTop={1.5}>
+            We value the trust you place in us, and we continually strive to
+            exceed your expectations. Our commitment to quality,
+            professionalism, and customer satisfaction is the foundation of our
+            business. We invite you to explore our website, browse our services,
+            and discover the endless possibilities that await you.
+          </Grid>
+          <Grid item className={classes["aboutus"]} marginTop={1.5}>
+            Thank you for choosing Forever Home Gardens . Let's embark on this
+            gardening and landscaping adventure together and create outdoor
+            spaces that truly reflect your vision and passion.
           </Grid>
           <Grid item borderLeft={"3px solid #73b21a"} marginTop={3}>
             <FormatQuoteOutlinedIcon
@@ -93,7 +134,7 @@ const AboutUs = () => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item md={3} display={{ xs: "none", sm: "inherit" }}>
           <img src={Gardener} alt={"lol"} />
         </Grid>
       </Grid>
@@ -116,7 +157,7 @@ const AboutUs = () => {
           bgcolor={"rgba(0,0,0,0.5)"}
           // justifyContent={"center"}
           alignItems={"center"}
-          padding={15}
+          padding={{xs:5,md:15}}
           gap={3}
         >
           <Card

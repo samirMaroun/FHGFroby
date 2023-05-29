@@ -11,6 +11,8 @@ import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import useWindowDimensions from "../Components/WindowDimensions";
 import PhoneNav from "./PhoneNav";
 import { useNavigate } from "react-router-dom";
+import Popover from "@mui/material/Popover";
+import { ServicesOfFHG } from "../Data/Data";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -47,6 +49,14 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const [anchorEl, setAnchorEl] = useState(false);
+
+  const handleClick = (event) => {
+    setAnchorEl(true);
+  };
+  const handleClose = () => {
+    setAnchorEl(false);
+  };
   return width > 1100 ? (
     <Grid
       container
@@ -196,9 +206,45 @@ const Navbar = () => {
             onClick={() => {
               navigate("/services");
             }}
+            onMouseOver={handleClick}
+            onMouseLeave={handleClose}
           >
             SERVICES
+            {anchorEl ? (
+              <Grid
+                item
+                container
+                sx={{
+                  position: "absolute",
+                  width: 300,
+                  bgcolor: "#1d1d1d",
+                  borderTop: "solid 1px #73b21a",
+                  color: "#ffffff",
+                  top: 60,
+                }}
+              >
+                <Grid
+                  onClick={handleClose}
+                  xs={12}
+                  className={classes["services"]}
+                >
+                  All Services
+                </Grid>
+                {ServicesOfFHG.map((service) => (
+                  <Grid
+                    onClick={handleClose}
+                    xs={12}
+                    className={classes["services"]}
+                  >
+                    {service.Title}
+                  </Grid>
+                ))}
+              </Grid>
+            ) : (
+              <></>
+            )}
           </Grid>
+
           <Grid
             paddingTop={"18px"}
             item

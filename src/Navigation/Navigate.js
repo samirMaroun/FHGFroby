@@ -13,7 +13,7 @@ import Services from "../Screens/Services";
 import Projects from "../Screens/Projects";
 import Testimonial from "../Screens/Testimonial";
 import ContactUs from "../Screens/ContactUs";
-
+import Service from "../Screens/Service";
 const Navigate = () => {
   return (
     <>
@@ -26,6 +26,8 @@ const Navigate = () => {
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/testimonials" element={<Testimonial />} />
           <Route exact path="/contactus" element={<ContactUs />} />
+          <Route exact path="/service" element={<Service />} />
+
         </Routes>
         <Footer />
       </Router>

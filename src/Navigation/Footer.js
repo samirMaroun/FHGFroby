@@ -9,6 +9,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ServiceFooter from "../Components/Footer/ServiceFooter";
 import ContactUsFooter from "../Components/Footer/ContactUsFooter";
 import WorkingTimeFooter from "../Components/Footer/WorkingTimeFooter";
+import { ServicesOfFHG } from "../Data/Data";
 const Footer = () => {
   return (
     <Grid
@@ -64,14 +65,10 @@ const Footer = () => {
             marginTop={2}
             height={0}
           ></Grid>
-
           <ServiceFooter title={"All Services"} margin6={true} />
-          <ServiceFooter title={"Spring & Fall Cleanup"} />
-          <ServiceFooter title={"Snow & Ice Removal"} />
-          <ServiceFooter title={"Lawn & Garden Care"} />
-          <ServiceFooter title={"Irrigation & Drainage"} />
-          <ServiceFooter title={"Stone and Hardscaping"} />
-          <ServiceFooter title={"Planting and Removal"} />
+          {ServicesOfFHG?.map((service, index) => (
+            <ServiceFooter title={service.Title} />
+          ))}
         </Grid>
         <Grid item lg={3}>
           <Grid item className={classes["titles"]} marginTop={5}>
