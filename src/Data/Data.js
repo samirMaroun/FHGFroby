@@ -4,6 +4,10 @@ import service3 from "../assets/Images/service3.jpg";
 import service4 from "../assets/Images/service4.jpg";
 import service5 from "../assets/Images/service5.jpg";
 import service6 from "../assets/Images/service6.jpg";
+import service7 from "../assets/Images/20220114_101420.jpg";
+import service8 from "../assets/Images/20210918_131150.jpg";
+import service9 from "../assets/Images/20210820_075836.jpg";
+
 import Plant1 from "../assets/Images/Plant1.jpg";
 import Plant2 from "../assets/Images/Plant2.jpg";
 
@@ -170,4 +174,86 @@ export const ServicesOfFHG = [
       { Id: 5, Name: "Labor Charge", UnitCost: 600, Quantity: 2 },
     ],
   },
+];
+export const ProjectsFHG = [
+  {
+    Id: 1,
+    Name: "Lawn Moner",
+    Types: [
+      "Garden Care",
+      "Gardening & Lawn",
+      "Lawn Care",
+      "Planting",
+      "Snow Removal",
+    ],
+    ImageBG:  service1,
+  },
+  {
+    Id: 2,
+    Name: "Gardern Cleaning",
+    Types: ["Garden Care", "Lawn Care"],
+    ImageBG:  service2,
+  },
+  {
+    Id: 3,
+    Name: "Wooden Portico",
+    Types: [" Garden Care", "Planting"],
+    ImageBG:  service3,
+  },
+  {
+    Id: 4,
+    Name: "Pricas Garden",
+    Types: ["Garden Care", "Lawn Care"],
+    ImageBG:  service4,
+  },
+  {
+    Id: 5,
+    Name: "Lawn Mover Cutting",
+    Types: ["Garden Care", "Lawn Care", "Planting"],
+    ImageBG:  service5,
+  },
+  {
+    Id: 6,
+    Name: "Parking Cleaning",
+    Types: ["Garden Care", "Snow Removal"],
+    ImageBG:  service6,
+  },
+  {
+    Id: 7,
+    Name: "Wooden Decks",
+    Types: ["Garden Care", "Snow Removal"],
+    ImageBG:  service7,
+  },
+  {
+    Id: 8,
+    Name: "Brick Pathway",
+    Types: ["Garden Care", "Gardening & Lawn"],
+    ImageBG:  service8,
+  },
+  {
+    Id: 9,
+    Name: "Leaf Cutting",
+    Types: ["Garden Care"],
+    ImageBG:  Plant1,
+  },
+  {
+    Id: 10,
+    Name: "Green Grass",
+    Types: ["Garden Care", "Gardening & Lawn"],
+    ImageBG:  Plant2,
+  },
+  {
+    Id: 11,
+    Name: "Modern Garden",
+    Types: ["Garden Care", "Gardening & Lawn"],
+    ImageBG:  service9,
+  },
+];
+export const ServiceTypes = [
+  { Id: 1, Name: "Garden Care" },
+  { Id: 2, Name: "Gardening & Lawn" },
+  { Id: 3, Name: "Lawn Care" },
+  { Id: 4, Name: "Planting" },
+  { Id: 5, Name: "Snow Removal" },
+  { Id: 6, Name: "Irrigation and drainage" },
 ];
