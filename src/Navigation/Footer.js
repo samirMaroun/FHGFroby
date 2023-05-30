@@ -31,7 +31,7 @@ const Footer = () => {
             <Grid item>
               <FacebookIcon
                 cursor={"pointer"}
-                sx={{ "&:hover": { color: "#73b21a" } }}
+                sx={{ "&:hover": { color: "#49882d" } }}
                 htmlColor="#ffffff"
                 fontSize="small"
               />
@@ -39,7 +39,7 @@ const Footer = () => {
             <Grid item>
               <TwitterIcon
                 cursor={"pointer"}
-                sx={{ "&:hover": { color: "#73b21a" } }}
+                sx={{ "&:hover": { color: "#49882d" } }}
                 htmlColor="#ffffff"
                 fontSize="small"
               />
@@ -47,7 +47,7 @@ const Footer = () => {
             <Grid item>
               <InstagramIcon
                 cursor={"pointer"}
-                sx={{ "&:hover": { color: "#73b21a" } }}
+                sx={{ "&:hover": { color: "#49882d" } }}
                 htmlColor="#ffffff"
                 fontSize="small"
               />
@@ -67,7 +67,7 @@ const Footer = () => {
           ></Grid>
           <ServiceFooter title={"All Services"} margin6={true} />
           {ServicesOfFHG?.map((service, index) => (
-            <ServiceFooter title={service.Title} />
+            <ServiceFooter title={service.Title} id={service.Id} />
           ))}
         </Grid>
         <Grid item lg={3}>

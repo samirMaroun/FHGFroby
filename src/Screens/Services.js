@@ -31,6 +31,8 @@ const Services = () => {
         rowGap={5}
         columnGap={3}
         paddingTop={10}
+        xs={10}
+        sm={12}
       >
         {ServicesOfFHG?.map((service) => (
           <ServiceCard

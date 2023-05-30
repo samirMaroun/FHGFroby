@@ -25,10 +25,20 @@ const ContactUsFooter = (props) => {
         <QueryBuilderOutlinedIcon fontSize="medium" htmlColor="#73b21a" />
       )}
 
-      <Grid item className={classes["infoCOm2"]} color={"#848484"}>
+      <Grid
+        item
+        className={classes["infoCOm2"]}
+        color={"#848484"}
+        fontSize={props.fontSize ? 14 : null}
+      >
         {props.title}
       </Grid>
-      <Grid item className={classes["infoCOm2"]} color={"#848484"} marginLeft={4.4}>
+      <Grid
+        item
+        className={classes["infoCOm2"]}
+        color={"#848484"}
+        marginLeft={4.4}
+      >
         {props.title2}
       </Grid>
     </Grid>

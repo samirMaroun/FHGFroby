@@ -3,6 +3,7 @@
   font-family: "Poppins";
   color: #ffffff;
   font-weight: bold;
+  text-align: center;
 }
 .box {
   width: 300px;
@@ -15,12 +16,23 @@
   color: #848484;
   justify-content: center;
   align-items: center;
- 
 }
 .box:hover {
   background-color: #73b21a;
   cursor: pointer;
   border: 1px dashed #73b21a;
+}
+.boxActive {
+  width: 300px;
+  height: 70px;
+  border: 1px dashed #73b21a;
+  background-color: #73b21a;
+  transition: 0.5s;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #848484;
+  justify-content: center;
+  align-items: center;
 }
 .box2 {
   width: 98%;
@@ -31,11 +43,123 @@
   font-size: 16px;
   font-family: "Poppins";
   color: #848484;
-  padding: 15px 20px;
+  padding: 20px 20px;
+}
+.box2Active {
+  width: 98%;
+  height: 93%;
+  border: 1px dashed #ffffff;
+  background-color: #73b21a;
+  transition: 0.5s;
+  font-size: 16px;
+  font-family: "Poppins";
+  color: #ffffff;
+  padding: 20px 20px;
 }
 .box2:hover {
   border: 1px dashed #ffffff;
   background-color: #73b21a;
   cursor: pointer;
   color: #ffffff;
+}
+.JobDescText {
+  color: #848484;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+.welcomet {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Poppins";
+  color: #000;
+  text-align: center;
+}
+.garden {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Poppins";
+  color: #73b21a;
+  text-align: center;
+}
+.titles {
+  font-size: 24px;
+  font-family: "Poppins";
+  color: #ffffff;
+}
+
+.tableHeader {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Poppins";
+  color: #000;
+  padding: 20px;
+  border-left: 1px solid #e5e5e5;
+}
+.tableHeader2 {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Poppins";
+  color: #000;
+  padding: 20px;
+}
+.tablerow {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Poppins";
+  color: #000;
+  padding: 20px;
+  border-left: 1px solid #e5e5e5;
+}
+.tablerow2 {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Poppins";
+  color: #000;
+  padding: 20px;
+}
+.tableData {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Poppins";
+  color: #aaaaaa;
+  padding: 20px;
+  border-left: 1px solid #e5e5e5;
+}
+.tableData2 {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Poppins";
+  color: #aaaaaa;
+  padding: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .JobDescText {
+    font-size: 13px;
+  }
+  .tableData2 {
+    font-size: 12px;
+  }
+  .tableData {
+    font-size: 12px;
+  }
+  .tablerow2 {
+    font-size: 12px;
+  }
+  .tablerow {
+    font-size: 12px;
+  }
+  .tableHeader {
+    font-size: 15px;
+  }
+  .tableHeader2 {
+    font-size: 15px;
+  }
+  .welcomet{
+    font-size: 18px;
+  }
+  .garden{
+    font-size: 18px;
+  }
 }

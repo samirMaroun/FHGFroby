@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,11 +14,58 @@ import Projects from "../Screens/Projects";
 import Testimonial from "../Screens/Testimonial";
 import ContactUs from "../Screens/ContactUs";
 import Service from "../Screens/Service";
+import { Grid } from "@mui/material";
+import arrowUp from "../assets/Images/arrowUp.png";
+import classes from "../assets/Styles/Navbar.module.css";
 const Navigate = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const desiredPoint = 200; // Adjust this value to your desired point
+
+      if (scrollY >= desiredPoint) {
+        setScrolled(true);
+        setWidth(40);
+      } else {
+        setScrolled(false);
+        setWidth(0);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <Router>
         <Navbar />
+
+        <Grid
+          item
+          position={"fixed"}
+          right={40}
+          bottom={40}
+          onMouseOver={(e) => {
+            e.target.style.cursor = "pointer";
+          }}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <img
+            src={arrowUp}
+            width={width}
+            className={classes["arrowUp"]}
+            alt="no"
+          />
+        </Grid>
+
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/aboutus" element={<AboutUs />} />
@@ -27,8 +74,8 @@ const Navigate = () => {
           <Route exact path="/testimonials" element={<Testimonial />} />
           <Route exact path="/contactus" element={<ContactUs />} />
           <Route exact path="/service" element={<Service />} />
-
         </Routes>
+
         <Footer />
       </Router>
     </>

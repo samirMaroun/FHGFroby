@@ -336,6 +336,7 @@ const HomePage = () => {
       >
         {ServicesOfFHG?.map((service) => (
           <ServiceCard
+            id={service.Id}
             key={service.Id}
             imgUrl={service.Image}
             title={service.Title}

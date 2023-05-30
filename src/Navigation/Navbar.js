@@ -17,6 +17,8 @@ import { ServicesOfFHG } from "../Data/Data";
 const Navbar = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("");
+  const [serviceId, setServiceId] = useState(null);
+
   const targetRef = useRef(null);
   const { width } = useWindowDimensions();
   const [isScrolledPast, setIsScrolledPast] = useState(false);
@@ -40,6 +42,8 @@ const Navbar = () => {
       setActiveTab("Testimonials");
     } else if (window.location.pathname === "/contactus") {
       setActiveTab("ContactUs");
+    } else if (window.location.pathname.includes("/Service")) {
+      setActiveTab("Services");
     }
   }, [window.location.pathname]);
 
@@ -203,13 +207,18 @@ const Navbar = () => {
             xs={2}
             className={classes["navButtons"]}
             color={activeTab === "Services" ? "#73b21a" : "#ffff"}
-            onClick={() => {
-              navigate("/services");
-            }}
             onMouseOver={handleClick}
             onMouseLeave={handleClose}
           >
-            SERVICES
+            <Grid
+              item
+              onClick={() => {
+                navigate("/services");
+              }}
+            >
+              SERVICES
+            </Grid>
+
             {anchorEl ? (
               <Grid
                 item
@@ -232,7 +241,10 @@ const Navbar = () => {
                 </Grid>
                 {ServicesOfFHG.map((service) => (
                   <Grid
-                    onClick={handleClose}
+                    onClick={(e) => {
+                      navigate(`/Service?id=${service.Id}`);
+                      handleClose();
+                    }}
                     xs={12}
                     className={classes["services"]}
                   >

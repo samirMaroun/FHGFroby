@@ -204,3 +204,6 @@
   background-color: #73b21a;
   transition: background-color 1s ease;
 }
+.arrowUp {
+  transition: width 0.5s;
+}
