@@ -34,19 +34,19 @@
 .infoText {
   font-size: 18px;
   font-weight: 300;
-  font-family: "Poppins";
+  font-family: Poppins;
   color: #00000097;
 }
 .infoText2 {
   font-size: 18px;
   font-weight: bold;
-  font-family: "Poppins";
+  font-family: Poppins;
   color: #000000;
 }
 .PhoneNumber {
   font-size: 24px;
   font-weight: 500;
-  font-family: "Poppins";
+  font-family: Poppins;
   color: #fff;
 }
 .arrCont {
@@ -59,7 +59,7 @@
 .silderText {
   font-weight: bold;
   font-size: 16px;
-  font-family: "Poppins";
+  font-family: Poppins;
   color: #73b21a;
   text-align: center;
   /* line-height: 1.1; */
@@ -67,7 +67,7 @@
 .silderText2 {
   font-weight: bold;
   font-size: 60px;
-  font-family: "Poppins";
+  font-family: Poppins;
   color: #fff;
   line-height: 1.5;
   text-align: center;
@@ -75,7 +75,7 @@
 .SeivicesBut {
   width: 200px;
   height: 70px;
-  font-family: "Poppins";
+  font-family: Poppins;
   background-color: transparent;
   border: 1px solid #fff;
   font-size: 16px;
@@ -90,21 +90,21 @@
 .welcomet {
   font-weight: bold;
   font-size: 36px;
-  font-family: "Poppins";
+  font-family: Poppins;
   color: #000;
   text-align: center;
 }
 .garden {
   font-weight: bold;
   font-size: 36px;
-  font-family: "Poppins";
+  font-family: Poppins;
   color: #73b21a;
   text-align: center;
 }
 .gardenText {
   font-weight: 300;
   font-size: 18px;
-  font-family: "Poppins";
+  font-family: Poppins;
   color: #9e9e9e;
   text-align: center;
 }
@@ -152,18 +152,18 @@
 }
 .carouselText {
   font-size: 18px;
-  font-family: "Roboto";
+  font-family: Roboto;
   color: #d5d5d5;
   text-align: center;
 }
 .feedbacker {
-  font-family: "Poppins";
+  font-family: Poppins;
   font-size: 18px;
   color: #ffffff;
 }
 .phoenNavButt {
   font-size: 20px;
-  font-family: "Poppins";
+  font-family: Poppins;
   color: #222222;
 }
 .phoenNavButt:hover {
@@ -197,7 +197,7 @@
   }
 }
 .services {
-  font-family: "Poppins";
+  font-family: Poppins;
   padding: 20px 20px 20px 20px;
   text-align: left;
 }

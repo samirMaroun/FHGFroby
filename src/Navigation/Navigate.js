@@ -17,6 +17,7 @@ import Service from "../Screens/Service";
 import { Grid } from "@mui/material";
 import arrowUp from "../assets/Images/arrowUp.png";
 import classes from "../assets/Styles/Navbar.module.css";
+import Project from "../Screens/Project";
 const Navigate = () => {
   const [scrolled, setScrolled] = useState(false);
   const [width, setWidth] = useState(0);
@@ -74,6 +75,7 @@ const Navigate = () => {
           <Route exact path="/testimonials" element={<Testimonial />} />
           <Route exact path="/contactus" element={<ContactUs />} />
           <Route exact path="/service" element={<Service />} />
+          <Route exact path="/project" element={<Project />} />
         </Routes>
 
         <Footer />

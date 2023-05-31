@@ -22,8 +22,9 @@ const ProjectCard = (props) => {
         setColor("#000000");
       }}
       onClick={() => {
-        navigate(`/Service?id=${props.id}`);
+        navigate(`/project?id=${props.id}`);
       }}
+      className={classes["projectCard"]}
     >
       <Grid
         item

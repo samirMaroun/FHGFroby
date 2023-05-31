@@ -71,7 +71,7 @@ const Navbar = () => {
       paddingTop={1}
       direction={"row"}
       height={isScrolledPast ? 0 : 55}
-      width={window.innerWidth}
+      width={"100%"}
       // position={"fixed"}
     >
       {isScrolledPast ? (

@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 .title {
-  font-family: "Poppins";
+  font-family: Poppins;
   font-size: 20px;
   font-weight: 500;
   text-align: center;
@@ -35,7 +35,7 @@
   /* color: #73b21a; */
 }
 .desc {
-  font-family: "Roboto";
+  font-family: Roboto;
   font-size: 16px;
   font-weight: lighter;
   color: #ececec;
@@ -62,7 +62,7 @@
   height: 1px;
 }
 .title2 {
-  font-family: "Poppins";
+  font-family: Poppins;
   font-size: 20px;
   font-weight: bold;
 
@@ -73,7 +73,7 @@
   color: #73b21a;
 }
 .desc2 {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: lighter;
   color: #848484;
@@ -81,7 +81,7 @@
   line-height: 1.6;
 }
 .desc3 {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: lighter;
   color: #73b21a;
@@ -99,4 +99,8 @@
   cursor: pointer;
   transform: scale(1.2);
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.projectCard{
+  transition: all 0.3s ease;
 }
