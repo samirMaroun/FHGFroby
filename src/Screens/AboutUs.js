@@ -25,7 +25,7 @@ const AboutUs = () => {
           About Us
         </Grid>
       </Grid>
-      <Grid item container padding={{ sm: 10, xs: 2 }} direction={"row"}>
+      <Grid item container padding={{ sm: 10, xs: 5 }} direction={"row"}>
         <Grid item md={7} xs={12}>
           <Grid
             item

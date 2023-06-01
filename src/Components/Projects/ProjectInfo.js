@@ -8,7 +8,7 @@ import { Grid } from "@mui/material";
 import classes from "../../assets/Styles/projects.module.css";
 const ProjectInfo = (props) => {
   return (
-    <Grid item container direction={"row"} gap={2} marginTop={2}>
+    <Grid item container direction={"row"} gap={2} marginTop={2} width={170}>
       {props.title === "Category" ? (
         <FolderOpenIcon htmlColor="#73b21a" fontSize="small" />
       ) : props.title === "Start Date" || props.title === "End Date" ? (

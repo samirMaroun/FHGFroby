@@ -12,7 +12,9 @@ const ProjectCard = (props) => {
       item
       container
       justifyContent={"center"}
-      md={2.5}
+      // letterSpacing={2.5}
+      md={3.5}
+      sm={4}
       onMouseOver={(e) => {
         setFullBg(true);
         setColor("#73b21a");
@@ -53,10 +55,12 @@ const ProjectCard = (props) => {
           ></Grid>
         </Grid>
       </Grid>
-      <Grid item className={classes["title2"]} color={color} paddingTop={2}>
+      <Grid item xs={12} container justifyContent={"center"} paddingTop={2}>
+      <Grid item className={classes["title2"]} color={color} >
         {props.title}
       </Grid>
-      <Grid item className={classes["desc3"]} paddingTop={1}>
+      </Grid>
+      <Grid item className={classes["desc3"]} >
         {props.servicesTypes?.map((ser, index) =>
           index === 0 ? ser : ", " + ser
         )}

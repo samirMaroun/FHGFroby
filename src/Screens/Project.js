@@ -10,7 +10,6 @@ import ProjectInfo from "../Components/Projects/ProjectInfo";
 import challenges from "../assets/Images/challenges.jpeg";
 import Results from "../assets/Images/results.jpeg";
 
-
 const Project = () => {
   // useEffect(() => {
   //   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -47,9 +46,18 @@ const Project = () => {
           {project?.Name}
         </Grid>
       </Grid>
-      <Grid item container justifyContent={"center"} sm={8.9} marginTop={10}>
-        <Grid gap={3.5} item container xs={12} direction={"row"}>
-          <Grid item xs={4}>
+      <Grid
+        item
+        container
+        justifyContent={"center"}
+        lg={9}
+        md={10}
+        sm={11}
+        xs={10}
+        marginTop={10}
+      >
+        <Grid item container xs={12} direction={"row"}>
+          <Grid item lg={4.5} md={4.5}>
             <Grid className={classes["welcomet"]} marginTop={1}>
               <Grid item container direction={"row"}>
                 Project&nbsp;
@@ -84,26 +92,40 @@ const Project = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={3.7} container>
-            <img
-              src={project?.ImageBefore}
-              width={"100%"}
-              height={"86%"}
-              alt="h"
-            />
-            <Grid item className={classes["banda"]} xs={12}>
-              Before
+          <Grid
+            item
+            container
+            md={7.5}
+            lg={7.5}
+            direction={"row"}
+            marginTop={{ xs: 5, md: 0 }}
+          >
+            <Grid item sm={6} paddingLeft={{ md: 2.5, xs: 0 }}>
+              <img
+                src={project?.ImageBefore}
+                width={"100%"}
+                height={"86%"}
+                alt="h"
+              />
+              <Grid item className={classes["banda"]} xs={12}>
+                Before
+              </Grid>
             </Grid>
-          </Grid>
-          <Grid item xs={3.7} container>
-            <img
-              src={project?.ImageAfter}
-              width={"100%"}
-              height={"86%"}
-              alt="h"
-            />
-            <Grid item className={classes["banda"]} xs={12}>
-              After
+            <Grid
+              item
+              sm={6}
+              paddingLeft={{ md: 2.5, xs: 0 }}
+              marginTop={{ xs: 3, md: 0 }}
+            >
+              <img
+                src={project?.ImageAfter}
+                width={"100%"}
+                height={"86%"}
+                alt="h"
+              />
+              <Grid item className={classes["banda"]} xs={12}>
+                After
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
@@ -133,8 +155,8 @@ const Project = () => {
           </Grid>
         </Grid>
 
-        <Grid item container direction={"row"}>
-          <Grid item xs={6}>
+        <Grid item container direction={"row"} justifyContent={"center"}>
+          <Grid item lg={6}>
             <Grid
               item
               container
@@ -156,10 +178,10 @@ const Project = () => {
               marginTop={2}
             ></Grid>
             <Grid item xs={12} container direction={"row"} marginTop={5}>
-              <Grid item xs={6}>
+              <Grid item sm={6} xs={12}>
                 <img src={challenges} width={"100%"} height={290} alt="hi" />
               </Grid>
-              <Grid item xs={6} paddingLeft={4}>
+              <Grid item sm={6} xs={12} paddingLeft={2}>
                 {project?.Challenges?.map((ch) => (
                   <Grid
                     item
@@ -182,11 +204,11 @@ const Project = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item lg={6}>
             <Grid
               item
               container
-              direction={"row"}
+              direction={{sm:"row"}}
               className={classes["welcomet"]}
               marginTop={10}
             >
@@ -204,10 +226,10 @@ const Project = () => {
               marginTop={2}
             ></Grid>
             <Grid item xs={12} container direction={"row"} marginTop={5}>
-              <Grid item xs={6}>
+              <Grid item sm={6} xs={12}>
                 <img src={Results} width={"100%"} height={290} alt="hi" />
               </Grid>
-              <Grid item xs={6} paddingLeft={4}>
+              <Grid item sm={6} paddingLeft={2} xs={12}>
                 {project?.Results?.map((ch) => (
                   <Grid
                     item

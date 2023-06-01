@@ -88,6 +88,7 @@ const Projects = () => {
         direction={"row"}
         gap={4}
         sm={10}
+        xs={10}
         marginTop={10}
         justifyContent={"center"}
       >
