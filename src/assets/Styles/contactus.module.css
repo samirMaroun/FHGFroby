@@ -1,0 +1,58 @@
+.Title {
+  font-size: 44px;
+  font-family: Poppins;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.welcomet {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: Poppins;
+  color: #000;
+  text-align: center;
+}
+.garden {
+  font-weight: bold;
+  font-size: 36px;
+  font-family: Poppins;
+  color: #73b21a;
+  text-align: center;
+}
+.infoCOm2 {
+  font-size: 16px;
+  font-family: Roboto;
+  color: #848484;
+}
+.text {
+  font-size: 15px;
+  font-family: Poppins;
+  height: 50px;
+  color: #000000;
+}
+
+.text2 {
+  font-size: 15px;
+  font-family: Poppins;
+  color: #000000;
+}
+.submitButton {
+  width: 200px;
+  height: 50px;
+  background-color: #73b21a;
+  font-size: 17px;
+  color: #ffffff;
+  border: 0;
+  text-align: center;
+}
+.submitButton:hover {
+  cursor: pointer;
+  background-color: #3c6109;
+}
+.submitButton:disabled:hover {
+  cursor: not-allowed;
+  background-color: #979191;
+}
+.submitButton:disabled {
+    background-color: #979191;
+  }

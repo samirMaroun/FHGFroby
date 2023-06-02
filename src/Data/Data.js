@@ -214,60 +214,270 @@ export const ProjectsFHG = [
     Name: "Gardern Cleaning",
     Types: ["Garden Care", "Lawn Care"],
     ImageBG: service2,
+    ImageBefore: service2,
+    ImageAfter: service1,
+    StartDate: "21 July 2019",
+    EndDate: "15 August 2019",
+    Client: "Samir Maroun",
+    ProjectValue: "$3000",
+    Location: "Para, Sydney",
+    Brief:
+      "Must explain to you how all this mistaken sed idea of denouncing pleasure and praising pain was born and gives you a completed system.",
+    Description:
+      "Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, the master-builders of human happiness. No one rejects, dislikes, or avoided pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, master builders of human happiness. No one rejects, dislikes, itself, because it is pleasure.",
+    Challenges: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
+    Results: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
   },
   {
     Id: 3,
     Name: "Wooden Portico",
     Types: [" Garden Care", "Planting"],
     ImageBG: service3,
+    ImageBefore: service2,
+    ImageAfter: service1,
+    StartDate: "21 July 2019",
+    EndDate: "15 August 2019",
+    Client: "Samir Maroun",
+    ProjectValue: "$3000",
+    Location: "Para, Sydney",
+    Brief:
+      "Must explain to you how all this mistaken sed idea of denouncing pleasure and praising pain was born and gives you a completed system.",
+    Description:
+      "Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, the master-builders of human happiness. No one rejects, dislikes, or avoided pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, master builders of human happiness. No one rejects, dislikes, itself, because it is pleasure.",
+    Challenges: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
+    Results: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
   },
   {
     Id: 4,
     Name: "Pricas Garden",
     Types: ["Garden Care", "Lawn Care"],
     ImageBG: service4,
+    ImageBefore: service2,
+    ImageAfter: service1,
+    StartDate: "21 July 2019",
+    EndDate: "15 August 2019",
+    Client: "Samir Maroun",
+    ProjectValue: "$3000",
+    Location: "Para, Sydney",
+    Brief:
+      "Must explain to you how all this mistaken sed idea of denouncing pleasure and praising pain was born and gives you a completed system.",
+    Description:
+      "Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, the master-builders of human happiness. No one rejects, dislikes, or avoided pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, master builders of human happiness. No one rejects, dislikes, itself, because it is pleasure.",
+    Challenges: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
+    Results: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
   },
   {
     Id: 5,
     Name: "Lawn Mover Cutting",
     Types: ["Garden Care", "Lawn Care", "Planting"],
     ImageBG: service5,
+    ImageBefore: service2,
+    ImageAfter: service1,
+    StartDate: "21 July 2019",
+    EndDate: "15 August 2019",
+    Client: "Samir Maroun",
+    ProjectValue: "$3000",
+    Location: "Para, Sydney",
+    Brief:
+      "Must explain to you how all this mistaken sed idea of denouncing pleasure and praising pain was born and gives you a completed system.",
+    Description:
+      "Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, the master-builders of human happiness. No one rejects, dislikes, or avoided pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, master builders of human happiness. No one rejects, dislikes, itself, because it is pleasure.",
+    Challenges: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
+    Results: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
   },
   {
     Id: 6,
     Name: "Parking Cleaning",
     Types: ["Garden Care", "Snow Removal"],
     ImageBG: service6,
+    ImageBefore: service2,
+    ImageAfter: service1,
+    StartDate: "21 July 2019",
+    EndDate: "15 August 2019",
+    Client: "Samir Maroun",
+    ProjectValue: "$3000",
+    Location: "Para, Sydney",
+    Brief:
+      "Must explain to you how all this mistaken sed idea of denouncing pleasure and praising pain was born and gives you a completed system.",
+    Description:
+      "Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, the master-builders of human happiness. No one rejects, dislikes, or avoided pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, master builders of human happiness. No one rejects, dislikes, itself, because it is pleasure.",
+    Challenges: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
+    Results: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
   },
   {
     Id: 7,
     Name: "Wooden Decks",
     Types: ["Garden Care", "Snow Removal"],
     ImageBG: service7,
+    ImageBefore: service2,
+    ImageAfter: service1,
+    StartDate: "21 July 2019",
+    EndDate: "15 August 2019",
+    Client: "Samir Maroun",
+    ProjectValue: "$3000",
+    Location: "Para, Sydney",
+    Brief:
+      "Must explain to you how all this mistaken sed idea of denouncing pleasure and praising pain was born and gives you a completed system.",
+    Description:
+      "Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, the master-builders of human happiness. No one rejects, dislikes, or avoided pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, master builders of human happiness. No one rejects, dislikes, itself, because it is pleasure.",
+    Challenges: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
+    Results: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
   },
   {
     Id: 8,
     Name: "Brick Pathway",
     Types: ["Garden Care", "Gardening & Lawn"],
     ImageBG: service8,
+    ImageBefore: service2,
+    ImageAfter: service1,
+    StartDate: "21 July 2019",
+    EndDate: "15 August 2019",
+    Client: "Samir Maroun",
+    ProjectValue: "$3000",
+    Location: "Para, Sydney",
+    Brief:
+      "Must explain to you how all this mistaken sed idea of denouncing pleasure and praising pain was born and gives you a completed system.",
+    Description:
+      "Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, the master-builders of human happiness. No one rejects, dislikes, or avoided pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, master builders of human happiness. No one rejects, dislikes, itself, because it is pleasure.",
+    Challenges: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
+    Results: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
   },
   {
     Id: 9,
     Name: "Leaf Cutting",
     Types: ["Garden Care"],
     ImageBG: Plant1,
+    ImageBefore: service2,
+    ImageAfter: service1,
+    StartDate: "21 July 2019",
+    EndDate: "15 August 2019",
+    Client: "Samir Maroun",
+    ProjectValue: "$3000",
+    Location: "Para, Sydney",
+    Brief:
+      "Must explain to you how all this mistaken sed idea of denouncing pleasure and praising pain was born and gives you a completed system.",
+    Description:
+      "Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, the master-builders of human happiness. No one rejects, dislikes, or avoided pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, master builders of human happiness. No one rejects, dislikes, itself, because it is pleasure.",
+    Challenges: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
+    Results: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
   },
   {
     Id: 10,
     Name: "Green Grass",
     Types: ["Garden Care", "Gardening & Lawn"],
     ImageBG: Plant2,
+    ImageBefore: service2,
+    ImageAfter: service1,
+    StartDate: "21 July 2019",
+    EndDate: "15 August 2019",
+    Client: "Samir Maroun",
+    ProjectValue: "$3000",
+    Location: "Para, Sydney",
+    Brief:
+      "Must explain to you how all this mistaken sed idea of denouncing pleasure and praising pain was born and gives you a completed system.",
+    Description:
+      "Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, the master-builders of human happiness. No one rejects, dislikes, or avoided pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, master builders of human happiness. No one rejects, dislikes, itself, because it is pleasure.",
+    Challenges: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
+    Results: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
   },
   {
     Id: 11,
     Name: "Modern Garden",
     Types: ["Garden Care", "Gardening & Lawn"],
     ImageBG: service9,
+    ImageBefore: service2,
+    ImageAfter: service1,
+    StartDate: "21 July 2019",
+    EndDate: "15 August 2019",
+    Client: "Samir Maroun",
+    ProjectValue: "$3000",
+    Location: "Para, Sydney",
+    Brief:
+      "Must explain to you how all this mistaken sed idea of denouncing pleasure and praising pain was born and gives you a completed system.",
+    Description:
+      "Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, the master-builders of human happiness. No one rejects, dislikes, or avoided pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Pleasure and praising pain was born and I will gives you a complete account of the system, and expounds the actual teachings of the great exploresr of the truth, master builders of human happiness. No one rejects, dislikes, itself, because it is pleasure.",
+    Challenges: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
+    Results: [
+      "Work Force Considerations",
+      "Environment Challenges",
+      "Process is not as predictable",
+    ],
   },
 ];
 export const ServiceTypes = [
@@ -277,4 +487,49 @@ export const ServiceTypes = [
   { Id: 4, Name: "Planting" },
   { Id: 5, Name: "Snow Removal" },
   { Id: 6, Name: "Irrigation and drainage" },
+];
+export const TestimonialsData = [
+  {
+    Id: 1,
+    Name: "Hanan Innocent",
+    Title: "Talented Landscapers",
+    Desciption:
+      "They completed the job on time and it looked better than what we expected. We feel very satisfied.",
+  },
+  {
+    Id: 2,
+    Name: "Fedo Elweard",
+    Title: "Excellent job, excellent workmanship",
+    Desciption:
+      "Excellent job, excellent workmanship. The job was neat, thorough and professional.",
+  },
+  {
+    Id: 3,
+    Name: "Astley Jenifer",
+    Title: "Great ! Garden Designs and Maintenance",
+    Desciption:
+      "Gardenhub helped me transform my dated, patchwork front yard into an inviting. That's Great!",
+  },
+  {
+    Id: 2,
+    Name: "Fedo Elweard",
+    Title: "Excellent job, excellent workmanship",
+    Desciption:
+      "Excellent job, excellent workmanship. The job was neat, thorough and professional.",
+  },
+  {
+    Id: 1,
+    Name: "Hanan Innocent",
+    Title: "Talented Landscapers",
+    Desciption:
+      "They completed the job on time and it looked better than what we expected. We feel very satisfied.",
+  },
+ 
+  {
+    Id: 3,
+    Name: "Astley Jenifer",
+    Title: "Great ! Garden Designs and Maintenance",
+    Desciption:
+      "Gardenhub helped me transform my dated, patchwork front yard into an inviting. That's Great!",
+  },
 ];

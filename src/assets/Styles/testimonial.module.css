@@ -1,0 +1,37 @@
+.Title {
+  font-size: 44px;
+  font-family: Poppins;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+.box {
+  background-color: #fafafa;
+  transition: 0.5s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: fit-content;
+}
+.box:hover {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  transition: img 0.5s;
+}
+.img2 {
+  transition: 0.5s;
+}
+.title {
+  font-size: 18px;
+  font-family: Poppins;
+  color: #222222;
+  text-align: center;
+}
+.desc {
+  color: #848484;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  font-weight: 300;
+  text-align: center;
+}
